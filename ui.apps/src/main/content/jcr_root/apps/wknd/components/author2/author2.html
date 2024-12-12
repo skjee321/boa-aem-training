@@ -1,0 +1,24 @@
+// ***** Pass attribute from Sightely to Sling Model(rAttribute) ******
+
+<div class="cmp-helloworld" data-cmp-is="helloworld" data-sly-use.model="${'com.adobe.aem.guides.wknd.core.models.Author2' @ rAttribute='TestAttribute'}">
+    <h2 class="cmp-helloworld__title">Page Title : ${model.pageTitle}</h2>
+    <h2 class="cmp-helloworld__title">Request Attribute : ${model.requestAttribute}</h2>
+    <h2 class="cmp-helloworld__title">Home Page Name : ${model.homePageName}</h2>
+    <div class="cmp-helloworld__item" data-sly-test="${model.firstName}">
+        <p class="cmp-helloworld__item-label">First Name :</p>
+        <pre class="cmp-helloworld__item-output" data-cmp-hook-helloworld="property">${model.firstName}</pre>
+    </div>
+    <div class="cmp-helloworld__item" data-sly-test="${model.lastName}">
+        <p class="cmp-helloworld__item-label">Last Name :</p>
+        <pre class="cmp-helloworld__item-output" data-cmp-hook-helloworld="property">${model.lastName}</pre>
+    </div>
+    <div class="cmp-helloworld__item" data-sly-test="${model.programmer}">
+        <p class="cmp-helloworld__item-label">Are you AEM programmer ? </p>
+        <pre class="cmp-helloworld__item-output" data-cmp-hook-helloworld="property">${model.programmer}</pre>
+    </div>
+    <div class="cmp-helloworld__item" data-sly-test="${model.message}">
+        <p class="cmp-helloworld__item-label">Model message:</p>
+        <pre class="cmp-helloworld__item-output"data-cmp-hook-helloworld="model">${model.message}</pre>
+    </div>
+</div>
+

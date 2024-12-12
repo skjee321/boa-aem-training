@@ -1,0 +1,37 @@
+<h1>OSGi Configuration Demo</h1>
+<div data-sly-use.osgiconfig="com.adobe.aem.guides.wknd.core.models.OSGiConfigDemo"></div>
+
+========= OSGi Config : Configurations within Service ========
+<div><p> Service Name : <b>${osgiconfig.serviceName}</b></p></div>
+<div><p> Service Count : <b>${osgiconfig.serviceCount}</b></p></div>
+<div><p> Live Data : <b>${osgiconfig.liveData}</b></p></div>
+<div><p> Run Mode : <b>${osgiconfig.runModes}</b></p></div>
+<div><b>Countries</b></div>
+<ul data-sly-list="${osgiconfig.countries}">
+    <li>${item}</li>
+</ul>
+
+<div> </div>
+========= OSGi Config : Configurations Outside Service ========
+
+<div><p> Service ID : <b>${osgiconfig.serviceId}</b></p></div>
+<div><p> Service Name : <b>${osgiconfig.serviceNameModule}</b></p></div>
+<div><p> Service URL : <b>${osgiconfig.serviceURL}</b></p></div>
+
+
+<div> </div>
+
+========= OSGi Config : Configurations Factory ========
+
+<div data-sly-list="${osgiconfig.allOSGiConfigs}">
+     ------Config # <b>${itemList.count}</b>-----
+    <div><p> Config ID: <b>${item.configID}</b></p></div>
+    <div><p> Service Name: <b>${item.serviceName}</b></p></div>
+    <div><p> Service URL : <b>${item.serviceURL}</b></p></div>
+</div>
+
+
+
+
+
+

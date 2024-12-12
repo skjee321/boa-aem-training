@@ -1,0 +1,25 @@
+<h1>Service Demo</h1>
+<div data-sly-use.service="com.adobe.aem.guides.wknd.core.models.ServiceDemo"></div>
+
+<div></div>
+============Invoking Service via Sling Model Demo ===========\n
+==================== USING Service and Iterator =============
+<div data-sly-list.item="${service.pagesList}">
+    <p> Page ${itemList.count} Title : <b>${item.title} </b></p>
+</div>
+==========Invoking a Service from another service Demo =======\n
+==================== USING Service and List ==================
+<div data-sly-list.item="${service.pageTitleList}">
+    <p> Page ${itemList.count} Title : <b>${item} </b></p>
+</div>
+<div></div>
+============== MULTI-SERVICES: ServiceRanking demo============
+<div><p> Name : <b>${service.nameFromService}</b></p></div>
+================= MULTI-SERVICES: Filter demo=================
+<div><p> Name : <b>${service.nameFromServiceB}</b></p></div>
+
+<div><p> Name With Reference : <b>${service.nameWithReference}</b></p></div>
+
+
+
+

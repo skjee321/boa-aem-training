@@ -1,0 +1,59 @@
+{
+  "authorbio" : {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "jcr:lastModifiedBy": "admin",
+    "professor": "true",
+    "jcr:created": "Sun Dec 08 2024 14:46:05 GMT+0530",
+    "books": [
+      "AEM Design",
+      "Advanced Java",
+      "React"
+    ],
+    "fname": "SHIVA",
+    "lname": "J",
+    "jcr:lastModified": "Sun Dec 08 2024 14:48:11 GMT+0530",
+    "sling:resourceType": "wknd/components/authorbio",
+    "bookdetailswithmap": {
+      "jcr:primaryType": "nt:unstructured",
+      "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "publishyear": "2024",
+        "booksubject": "AEM Design Patterns",
+        "bookname": "AEM Design"
+      },
+      "item1": {
+        "jcr:primaryType": "nt:unstructured",
+        "publishyear": "2023",
+        "booksubject": "Advanced Java Training",
+        "bookname": "Advanced Java"
+      }
+    }
+  },
+  "authorbio-without-books" : {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "jcr:lastModifiedBy": "admin",
+    "professor": "true",
+    "jcr:created": "Sun Dec 08 2024 14:46:05 GMT+0530",
+    "fname": "SHIVA",
+    "lname": "J",
+    "jcr:lastModified": "Sun Dec 08 2024 14:48:11 GMT+0530",
+    "sling:resourceType": "wknd/components/authorbio",
+    "bookdetailswithmap": {
+      "jcr:primaryType": "nt:unstructured",
+      "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "publishyear": "2024",
+        "booksubject": "AEM Design Patterns",
+        "bookname": "AEM Design"
+      },
+      "item1": {
+        "jcr:primaryType": "nt:unstructured",
+        "publishyear": "2023",
+        "booksubject": "Advanced Java Training",
+        "bookname": "Advanced Java"
+      }
+    }
+  }
+}

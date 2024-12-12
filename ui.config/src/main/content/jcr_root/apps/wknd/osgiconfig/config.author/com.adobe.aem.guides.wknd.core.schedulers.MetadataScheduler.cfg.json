@@ -1,0 +1,8 @@
+{
+  "schedulerName" : "BofA Asset Metadata Scheduler",
+  "schedulerConcurrent" : false,
+  "serviceEnabled" : false,
+  "schedulerExpression" : "0 */10 * ? * *",
+  "damPathLocation" : "wknd=/content/dam/wknd-shared/en/activities/climbing",
+  "iconMapping": ["application/pdf=fa-file-pdf", "image/png=fa-file-image", "image/jpeg=fa-file-image", "text/plain=fa-file-alt", "application/msword=fa-file-word", "application/vnd.ms-excel=fa-file-excel"]
+}

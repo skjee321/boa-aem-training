@@ -1,0 +1,45 @@
+// ****** Authored content loaded via JCR properties directly ******* //
+<div class="cmp-helloworld" data-cmp-is="helloworld">
+    <h2 class="cmp-helloworld__title">Author Details</h2>
+    <div class="cmp-helloworld__item" data-sly-test="${properties.firstName}">
+        <p class="cmp-helloworld__item-label">First Name :</p>
+        <pre class="cmp-helloworld__item-output" data-cmp-hook-helloworld="property">${properties.firstName}</pre>
+    </div>
+    <div class="cmp-helloworld__item" data-sly-test="${properties.lastName}">
+        <p class="cmp-helloworld__item-label">Last Name :</p>
+        <pre class="cmp-helloworld__item-output" data-cmp-hook-helloworld="property">${properties.lastName}</pre>
+    </div>
+    <div class="cmp-helloworld__item" data-sly-test="${properties.programmer}">
+        <p class="cmp-helloworld__item-label">Are you AEM programmer ? </p>
+        <pre class="cmp-helloworld__item-output" data-cmp-hook-helloworld="property">${properties.programmer}</pre>
+    </div>
+    <div class="cmp-helloworld__item" data-sly-use.model="com.adobe.aem.guides.wknd.core.models.AuthorModel" data-sly-test="${model.message}">
+        <p class="cmp-helloworld__item-label">Model message:</p>
+        <pre class="cmp-helloworld__item-output"data-cmp-hook-helloworld="model">${model.message}</pre>
+    </div>
+</div>
+
+<!--
+ //***** Rendering authered content via Sling Model ******//
+-->
+
+<!--
+<div class="cmp-helloworld" data-cmp-is="helloworld" data-sly-use.model="com.adobe.aem.guides.wknd.core.models.Author">
+    <h2 class="cmp-helloworld__title">Author Details</h2>
+    <div class="cmp-helloworld__item" data-sly-test="${model.firstName}">
+        <p class="cmp-helloworld__item-label">First Name :</p>
+        <pre class="cmp-helloworld__item-output" data-cmp-hook-helloworld="property">${model.firstName}</pre>
+    </div>
+    <div class="cmp-helloworld__item" data-sly-test="${model.lastName}">
+        <p class="cmp-helloworld__item-label">Last Name :</p>
+        <pre class="cmp-helloworld__item-output" data-cmp-hook-helloworld="property">${model.lastName}</pre>
+    </div>
+    <div class="cmp-helloworld__item" data-sly-test="${model.programmer}">
+        <p class="cmp-helloworld__item-label">Are you AEM programmer ? </p>
+        <pre class="cmp-helloworld__item-output" data-cmp-hook-helloworld="property">${model.programmer}</pre>
+    </div>
+    <div class="cmp-helloworld__item" data-sly-test="${model.message}">
+        <p class="cmp-helloworld__item-label">Model message:</p>
+        <pre class="cmp-helloworld__item-output"data-cmp-hook-helloworld="model">${model.message}</pre>
+    </div>
+</div>-->
