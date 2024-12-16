@@ -44,13 +44,13 @@ public class BofASchedulerJobs implements Job {
 
     private void addSchedulerJob(SchedulerConfiguration config) {
 
-        ScheduleOptions in = scheduler.EXPR("0 03 17 1/1 * ? *");
+        ScheduleOptions in = scheduler.EXPR("0/30 * * * * ?");
         Map<String, Serializable> inMap=new HashMap<>();
         inMap.put("country","IN");
         inMap.put("url","www.in.com");
         in.config(inMap);
-
         scheduler.schedule(this,in);
+
         ScheduleOptions de = scheduler.EXPR("0 04 17 1/1 * ? *");
         Map<String, Serializable> deMap=new HashMap<>();
         deMap.put("country","DE");

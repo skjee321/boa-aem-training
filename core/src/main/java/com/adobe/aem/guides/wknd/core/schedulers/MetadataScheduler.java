@@ -42,7 +42,7 @@ public class MetadataScheduler implements Runnable {
 		boolean serviceDebug() default false;
 
 		@AttributeDefinition(name = "Expression", description = "Cron-job expression. Default run daily at 1AM (0 0 1 * * ?).", type = AttributeType.STRING)
-		String schedulerExpression() default "0 */10 * ? * *";
+		String schedulerExpression() default "* 0/10 * * * ?";
 
 		@AttributeDefinition(name = "Data File Location", description = "Path which has the hierarchies of assets for each opco or brand eg. /content/dam/opw", type = AttributeType.STRING)
 		String fileLocation() default "/content/dam/data/assets/metadata";
